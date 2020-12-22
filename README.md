@@ -1,4 +1,3 @@
-# Animacion-De-Fondos-De-Css---Dc-Comic
-Animación CSS Y HTML
+# animacion-fondo-cd-comic
+esta es una animacion de fondos de algunos personajes de dc, esta realizado solo con animaciones de css.
 
-este es un proyecto de una animaciones realizadas con CSS donde se pueden ver algunos personajes de el universo de DC Comic esta realizada con HTML Y CSS

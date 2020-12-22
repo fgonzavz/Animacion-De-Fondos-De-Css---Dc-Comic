@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  width: 90%;
+  margin: 80px auto;
+  max-width: 1500px;
+  height: 80vh;
+}
+body {
+  background-color: #333;
+}
+
+.contenedor h2 {
+  text-align: center;
+  font-size: 60px;
+  text-transform: capitalize;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #0376f2;
+}
+
+.contenedor h2 span{
+  color: #fff;
+}
+
+.contenedor-fondos{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.fondo1 {
+  background-image: url(../img/imagen1.jpg);
+  animation: Animacion 25s linear 18s infinite;
+}
+
+.fondo2 {
+  background-image: url(../img/imagen2.jpg);
+  animation: Animacion 25s linear 12s infinite;
+}
+
+.fondo3 {
+  background-image: url(../img/imagen3.jpg);
+  animation: Animacion 25s linear 6s infinite;
+}
+
+.fondo4 {
+  background-image: url(../img/imagen4.jpg);
+  animation: Animacion 25s linear 0s infinite;
+}
+
+
+
+.fondo1,
+.fondo2,
+.fondo3,
+.fondo4 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
+  height: 70vh;
+  position: absolute;
+  border-bottom: 10px solid #0376f2 ;
+  border-right: 5px solid #0376f2 ;
+  border-top:10px solid #fff;
+  border-left: 5px solid #fff;
+  border-radius: 8px;
+  display:inline-block ;
+   text-align: center;
+   
+  
+ 
+}
+
+@keyframes Animacion {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1022px) {
+  .contenedor h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .fondo1,
+  .fondo2,
+  .fondo3,
+  .fondo4 {
+    width: 92%;
+    margin: auto;
+  }
+  .contenedor h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .fondo1,
+  .fondo2,
+  .fondo3,
+  .fondo4 {
+    width: 92%;
+    height: 65vh;
+  }
+  .contenedor h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
